@@ -14,7 +14,7 @@
         "64" : "icon.png"
     },
     
-    // override the chrome tabs newtab,bookmark,history
+    // override the chrome tabs newtab,bookmark,history only one can be used at a time
     "chrome_url_overrides" :{
         "newtab" : "image.html"
     },
