@@ -3,7 +3,7 @@
 }
 
 body{
-	background-image: url("dead.jpg");
+	background-image: url("dead.jpg"); /* Add custom image path to change the image */
 	background-repeat: no-repeat;
 	background-size: 100% 648px;
 
