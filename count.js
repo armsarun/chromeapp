@@ -1,0 +1,1 @@
+// "content_scripts" js displays the views in user tab

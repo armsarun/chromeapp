@@ -1,0 +1,26 @@
+.middle{
+	margin-top: 240px;
+}
+
+body{
+	background-image: url("dead.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 648px;
+
+}
+
+h1, h2, h3{
+	color: #ffffff;
+	width:100%;
+}
+
+h2 {
+
+	padding-top: 10px;
+    text-align: center;
+}
+
+#color{
+	 color: #FF1B1B;
+}
+

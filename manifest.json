@@ -1,0 +1,41 @@
+{
+	"manifest_version" : 2,
+
+	"name" : "Custom Tab",
+	"description" : "Create a custom  Tab and put your image there",
+	"version" : "1.0",
+
+	"browser_action" : {
+		"default_icon":"icon.png",
+		"default_popup":"popup.html"
+	},
+
+    "icons" : {
+        "64" : "icon.png"
+    },
+    
+    // override the chrome tabs newtab,bookmark,history
+    "chrome_url_overrides" :{
+        "newtab" : "image.html"
+    },
+
+    // Works on the background scripts user doesn't know
+    "background" : {
+    	"scripts" :["background.js"]
+    },
+
+    // get the permissio from the chrome API
+    "permissions": [
+    	"tabs"
+    ],
+     
+
+     // works on chrome newtab
+    "content_scripts" :[
+        {
+        "matches": ["*://*/_/chrome/newtab*"],
+         "js" : ["count.js"]
+     }
+     ]
+
+}
